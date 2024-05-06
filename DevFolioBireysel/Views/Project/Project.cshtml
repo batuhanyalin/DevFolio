@@ -1,0 +1,37 @@
+﻿@model List<DevFolioBireysel.Models.TblProject>
+@{
+    ViewBag.Title = "Project";
+    Layout = "~/Views/AdminLayout/AdminLayout.cshtml";
+}
+
+<h2>Projeler</h2>
+<a class="btn btn-info" href="/Project/CreateProject">Yeni Proje Ekle</a>
+<br />
+<br />
+<div class="container">
+    <table class="table table-bordered">
+        <tr>
+            <th>Proje ID</th>
+            <th>Başlık</th>
+            <th>Proje Görseli</th>
+            <th>Oluşturulma Tarihi</th>
+            <th>Proje Kategorisi</th>
+            <th>Github Linki</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ProjectID</td>
+                <td>@item.Title</td>
+                <td>@item.CoverImageUrl</td>
+                <td>@item.CreatedDate</td>
+                <td>@item.ProjectCategory</td>
+                <td>@item.GithubLink</td>
+                <td><a href="/Project/DeleteProject/@item.ProjectID" class="btn btn-danger">Sil</a></td>
+                <td>
+                    <a href="/Project/UpdateProject/@item.ProjectID" class="btn btn-success">Güncelle</a>
+                </td>
+            </tr>
+        }
+    </table>
+</div>

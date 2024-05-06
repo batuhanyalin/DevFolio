@@ -1,0 +1,10 @@
+﻿@model List<DevFolioBireysel.Models.TblProfile>
+@foreach (var item in Model)
+{
+    <div class="about-info">
+        <p><span class="title-s">Ad: </span> <span>@item.NameSurname</span></p>
+        <p><span class="title-s">Profil: </span> <span>@item.Title</span></p>
+        <p><span class="title-s">E-posta: </span> <span>@item.Email</span></p>
+        <p><span class="title-s">Telefon: </span> <span>@item.Phone</span></p>
+    </div>
+}

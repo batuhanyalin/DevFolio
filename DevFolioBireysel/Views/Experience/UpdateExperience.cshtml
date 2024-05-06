@@ -1,0 +1,24 @@
+﻿@model DevFolioBireysel.Models.TblExperience
+@{
+    ViewBag.Title = "UpdateExperience";
+    Layout = "~/Views/AdminLayout/AdminLayout.cshtml";
+}
+
+<h2>Tecrübe Güncelle</h2>
+<br />
+<form method="post">
+    <label>Tecrübe ID</label>
+    @Html.TextBoxFor(x => x.ExperienceID, new { @class = "form-control" })
+    <br />
+    <label>Başlık</label>
+    @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
+    <br />
+    <label>Puan</label>
+    @Html.TextBoxFor(x => x.Puan, new { @class = "form-control" })
+    <br />
+    <label>Logo</label>
+    @Html.TextBoxFor(x => x.Logo, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-secondary">Güncelle</button>
+</form>
+

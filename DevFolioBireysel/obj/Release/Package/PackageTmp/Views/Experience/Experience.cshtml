@@ -1,0 +1,32 @@
+﻿@model List<DevFolioBireysel.Models.TblExperience>
+@{
+    ViewBag.Title = "Experience";
+    Layout = "~/Views/AdminLayout/AdminLayout.cshtml";
+}
+
+<h2>Tecrübeler</h2>
+<a class="btn btn-info" href="/Experience/CreateExperience">Yeni Tecrübe Ekle</a>
+<br />
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>Tecrübe ID</th>
+        <th>Başlık</th>
+        <th>Puan</th>
+        <th>Logo</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ExperienceID</td>
+            <td>@item.Baslik</td>
+            <td>@item.Puan</td>
+            <td>@item.Logo</td>
+            <td><a class="btn btn-danger" href="/Experience/DeleteExperience/@item.ExperienceID">Sil</a></td>
+            <td><a class="btn btn-success" href="/Experience/UpdateExperience/@item.ExperienceID">Güncelle</a></td>
+        </tr>
+    }
+</table>
+

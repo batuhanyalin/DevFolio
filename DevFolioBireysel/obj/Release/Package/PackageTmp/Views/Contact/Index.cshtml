@@ -1,0 +1,31 @@
+﻿@model List<DevFolioBireysel.Models.TblContact>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/AdminLayout.cshtml";
+}
+
+<div class="container">
+    <table class="table table-bordered">
+        <tr>
+            <th>ContactID</th>
+            <th>Adı Soyadı</th>
+            <th>E-mail</th>
+            <th>Konu</th>
+            <th>Mesaj</th>
+            <th>Mesaj Tarihi</th>
+            <th>Durumu</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ContactID</td>
+                <td>@item.NameSurname</td>
+                <td>@item.Email</td>
+                <td>@item.Subject</td>
+                <td>@item.Message</td>
+                <td>@item.SendMessageDate</td>
+                <td>@item.IsRead</td>             
+            </tr>
+        }
+    </table>
+</div>

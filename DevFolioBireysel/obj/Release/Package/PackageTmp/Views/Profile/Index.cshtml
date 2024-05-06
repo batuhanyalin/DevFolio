@@ -1,0 +1,27 @@
+﻿@model DevFolioBireysel.Models.TblProfile
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/AdminLayout.cshtml";
+}
+
+<h2>Profil Bilgileri</h2>
+
+<form method="post">
+
+    <label>Profil ID</label>
+    @Html.TextBoxFor(x => x.ProfileID, new { @class = "form-control" })
+    <br />
+    <label>Adı Soyadı</label>
+    @Html.TextBoxFor(x => x.NameSurname, new { @class = "form-control" })
+    <br />
+    <label>Nitelik</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+    <label>E-posta</label>
+    @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+    <br />
+    <label>Telefon</label>
+    @Html.TextBoxFor(x => x.Phone, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-secondary">Güncelle</button>
+</form>

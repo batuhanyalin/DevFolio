@@ -1,0 +1,64 @@
+﻿@model DevFolioBireysel.Models.TblAdmin
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+@Html.Action("PartialHeader", "Login")
+<body>
+    <div class="limiter">
+        @using (Html.BeginForm("Index", "Login", FormMethod.Post))
+        {<div class="container-login100" style="background-image: url('/Templates/Login_v4/images/bg-01.jpg');">
+                <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+                    <form class="login100-form validate-form">
+                        <span class="login100-form-title p-b-49">
+                            Hesap Girişi
+                        </span>
+
+                        <div class="wrap-input100 validate-input m-b-23" data-validate="Kullanıcı adı gerekli">
+                            <span class="label-input100">Kullanıcı Adı</span>
+                            @Html.TextBoxFor(x => x.Username, "", new { @class = "input100", @placeholder = "Kullanıcı adı" })
+                            <span class="focus-input100" data-symbol="&#xf206;"></span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="Parola gerekli">
+                            <span class="label-input100">Şifre</span>
+                            @Html.TextBoxFor(x => x.Password, "", new { @class = "input100", @placeholder = "Parola" })
+                            <span class="focus-input100" data-symbol="&#xf190;"></span>
+                        </div>
+                      <br />
+                        <div class="container-login100-form-btn">
+                            <div class="wrap-login100-form-btn">
+                                <div class="login100-form-bgbtn"></div>
+                                <button class="login100-form-btn">
+                                    Giriş Yap
+                                </button>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="flex-c-m">
+                            <a href="#" class="login100-social-item bg1">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+
+                            <a href="#" class="login100-social-item bg2">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+
+                            <a href="#" class="login100-social-item bg3">
+                                <i class="fa fa-google"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div id="dropDownSelect1"></div>
+
+    @Html.Action("PartialScript", "Login")
+
+</body>
+</html>

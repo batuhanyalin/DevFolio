@@ -1,0 +1,22 @@
+﻿
+@model DevFolioBireysel.Models.TblFeature
+@{
+    ViewBag.Title = "UpdateFeature";
+    Layout = "~/Views/AdminLayout/AdminLayout.cshtml";
+}
+
+<h2>Nitelik Güncelle</h2>
+<br />
+<br />
+<form method="post">
+    <label>Nitelik ID</label>
+    @Html.TextBoxFor(x => x.FeatureID, new { @class = "form-control" })
+    <br />
+    <label>Nitelik Başlığı</label>
+    @Html.TextBoxFor(x => x.HeaderTitle, new { @class = "form-control" })
+    <br />
+    <label>Nitelik Açıklaması</label>
+    @Html.TextBoxFor(x => x.HeaderDescription, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-secondary">Güncelle</button>
+</form>

@@ -1,0 +1,19 @@
+﻿@model DevFolioBireysel.Models.TblTestimonial
+@{
+    ViewBag.Title = "CreateTestimonial";
+    Layout = "~/Views/AdminLayout/AdminLayout.cshtml";
+}
+<h2>Yeni Referans Ekle</h2>
+<form method="post">
+    <label>Adı Soyadı</label>
+    @Html.TextBoxFor(x => x.NameSurname, new { @class = "form-control" })
+    <br />
+    <label>Referans Görseli</label>
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+    <br />
+    <label>Açıklama</label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Yeni Referans Ekle</button>
+</form>
+

@@ -1,0 +1,15 @@
+﻿@model DevFolioBireysel.Models.TblSocialMedia
+@{
+    ViewBag.Title = "SocialMediaUpdate";
+    Layout = "~/Views/AdminLayout/AdminLayout.cshtml";
+}
+
+<h2>Sosyal Medya Güncelleme</h2>
+<form method="post">
+    <label>ID</label>
+    @Html.TextBoxFor(x => x.SocialMediaID, new {@class="form-control"})
+    <label>Platform Adı</label>
+    @Html.TextBoxFor(x => x.PlatformName, new {@class="form-control"})
+    <br />
+    <button class="btn btn-primary">Sosyal Medyayı Güncelle</button>
+</form>

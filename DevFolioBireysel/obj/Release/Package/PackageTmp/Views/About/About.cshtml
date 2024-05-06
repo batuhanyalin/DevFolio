@@ -1,0 +1,16 @@
+﻿@model DevFolioBireysel.Models.TblAbout
+@{
+    ViewBag.Title = "About";
+    Layout = "~/Views/AdminLayout/AdminLayout.cshtml";
+}
+
+<form method="post">
+    <label>Hakkımda ID</label>
+    @Html.TextBoxFor(x => x.AboutID, new {@class="form-check"})
+    <br />
+    <label>Hakkımda metni</label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control"})
+    <br />
+    <button class="btn btn-secondary">Güncelle</button>
+</form>
+

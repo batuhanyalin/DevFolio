@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/AdminLayout.cshtml";
+}
+<div class="container">
+    <div class="row">
+        <div class="col col-md-6">
+            <div class="alert alert-danger">Kategori Sayısı: @ViewBag.categoryCount</div>
+            <div class="alert alert-warning">Proje Sayısı: @ViewBag.projectCount</div>
+            <div class="alert alert-success">Yetenek Sayısı Sayısı: @ViewBag.skillCount</div>
+            <div class="alert alert-dark">Ortalama Yetenek Puanı: @ViewBag.averageSkillPoint</div>
+            <div class="alert alert-primary">Son Eklenen Yetenek: @ViewBag.lastSkillTitleName</div>
+            <div class="alert alert-info">Asp.Net Core Kategorisindeki Proje Sayısı: @ViewBag.coreCategoryProjectCount</div>
+        </div>
+        <div class="col col-md-6">
+            <div class="alert alert-danger">Html Kategorisindeki Proje Sayısı: @ViewBag.htmlCategoryProjectCount</div>
+            <div class="alert alert-warning">C# Kategorisindeki Proje Sayısı: @ViewBag.csharpCategoryProjectCount</div>
+            <div class="alert alert-success">Python Kategorisindeki Proje Sayısı: @ViewBag.pythonCategoryProjectCount</div>
+            <div class="alert alert-dark">En son yapan kişi: @ViewBag.getLastTestimonial2</div>
+            <div class="alert alert-info">En son yapılan yorum: @ViewBag.getLastTestimonialContect</div>
+        </div>
+    </div>
+</div>
+

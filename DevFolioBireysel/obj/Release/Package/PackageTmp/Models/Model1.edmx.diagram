@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4abca1254cf04bce8d843be921592a38" Name="Diagram1" ZoomLevel="71">
+        <EntityTypeShape EntityType="DbDevFolioModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDevFolioModel.TblAdmin" Width="1.5" PointX="2.375" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDevFolioModel.TblAdress" Width="1.5" PointX="4" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDevFolioModel.TblCategory" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDevFolioModel.TblContact" Width="1.5" PointX="4.625" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDevFolioModel.TblFeature" Width="1.5" PointX="6.25" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDevFolioModel.TblProfile" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDevFolioModel.TblProject" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDevFolioModel.TblService" Width="1.5" PointX="2.375" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDevFolioModel.TblSkill" Width="1.5" PointX="4" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDevFolioModel.TblSocialMedia" Width="1.5" PointX="5.625" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDevFolioModel.TblTestimonial" Width="1.5" PointX="5.625" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="DbDevFolioModel.FK_TblProject_TblCategory" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DbDevFolioModel.TblAbout" Width="1.5" PointX="7.25" PointY="7.75" />
+        <EntityTypeShape EntityType="DbDevFolioModel.TblExperience" Width="1.5" PointX="8.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

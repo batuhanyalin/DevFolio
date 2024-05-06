@@ -1,0 +1,20 @@
+﻿@model DevFolioBireysel.Models.TblSkill
+@{
+    ViewBag.Title = "UpdateSkill";
+    Layout = "~/Views/AdminLayout/AdminLayout.cshtml";
+}
+
+<h2>Yetenek Güncelleme</h2>
+<form method="post">
+    <label>Yetenek ID</label>
+    @Html.TextBoxFor(x => x.SkillID, new {@class="form-control"})
+    <br />
+    <label>Yetenek Adı</label>
+    @Html.TextBoxFor(x => x.SkillTitle, new {@class="form-control"})
+    <br />
+    <label>Yetenek Oranı</label>
+    @Html.TextBoxFor(x => x.SkillValue, new {@class="form-control"})
+    <br />
+    <button class="btn btn-primary">Yeteneği Güncelle</button>
+</form>
+

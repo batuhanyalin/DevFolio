@@ -1,0 +1,22 @@
+﻿@model DevFolioBireysel.Models.TblService
+@{
+    ViewBag.Title = "CreateService";
+    Layout = "~/Views/AdminLayout/AdminLayout.cshtml";
+}
+
+<h2>Yeni Hizmet Giriş</h2>
+<br />
+<form method="post">
+    <label>Hizmet Adı</label>
+    @Html.TextBoxFor(x => x.ServiceTitle, new { @class = "form-control" })
+    <br />
+    <label>Hizmet Logosu</label>
+    @Html.TextBoxFor(x => x.ServiceImageUrl, new { @class = "form-control" })
+    <br />
+    <label>Hizmet Açıklaması</label>
+    @Html.TextBoxFor(x => x.ServiceDescription, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Yeteneği Kaydet</button>
+</form>
+
+

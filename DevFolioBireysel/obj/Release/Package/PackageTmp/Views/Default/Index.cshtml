@@ -1,0 +1,116 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+@Html.Action("PartialHead", "Default")
+<body id="page-top">
+    <!--/ Nav Star /-->
+    @Html.Action("PartialNavBar", "Default")
+    <!--/ Nav End /-->
+    <!--/ Intro Skew Star /-->
+    @Html.Action("PartialFeature", "Default")
+    <!--/ Intro Skew End /-->
+    <section id="about" class="about-mf sect-pt4 route">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="box-shadow-full">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-5">
+                                        <div class="about-img">
+                                            <img src="~/Templates/devfolio-master/img/batuhanyalin.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-7">
+                                        @Html.Action("PartialProfile", "Default")
+                                    </div>
+                                </div>
+                                @Html.Action("PartialSkills", "Default")
+                            </div>
+                            <div class="col-md-6">
+                                @Html.Action("PartialAbout", "Default")
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Section Services Star /-->
+    @Html.Action("PartialServices", "Default")
+    <!--/ Section Services End /-->
+@Html.Action("PartialExperience","Experience")
+    <!--/ Section Portfolio Star /-->
+    @Html.Action("PartialPortfolio","Default")
+    <!--/ Section Portfolio End /-->
+    <!--/ Section Testimonials Star /-->
+    @Html.Action("PartialTestimonial", "Default")
+    <!--/ Section Blog Star /-->
+    <!--/ Section Blog End /-->
+    <!--/ Section Contact-Footer Star /-->
+    <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+        <div class="overlay-mf"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="contact-mf">
+                        <div id="contact" class="box-shadow-full">
+                            <div class="row">
+                                @Html.Action("PartialContact", "Default")
+                                <div class="col-md-6">
+                                    <div class="title-box-2 pt-4 pt-md-0">
+                                        <h5 class="title-left">
+                                            BANA ULAŞ
+                                        </h5>
+                                    </div>
+                                    <div class="more-info">
+                                        <p class="lead">
+                                            Bana aşağıdaki adreslerden ulaşabilirsiniz.
+                                        </p>
+                                        <ul class="list-ico">
+                                            <li><span class="ion-ios-location"></span> Bursa,Turkey</li>
+                                            <li><span class="ion-ios-telephone"></span> +90 555 55 55</li>
+                                            <li><span class="ion-email"></span> iletisim@batuhanyalin.com</li>
+                                        </ul>
+                                    </div>
+                                    @Html.Action("PartialSocialMedia", "Default")
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="copyright-box">
+                            <p class="copyright">&copy; Copyright. Tüm Hakları Saklıdır.</p>
+                            <div class="credits">
+                                <!--
+                                  All the links in the footer should remain intact.
+                                  You can delete the links only if you purchased the pro version.
+                                  Licensing information: https://bootstrapmade.com/license/
+                                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+                                -->
+                                Bu proje MY Yazılım Akademi dersi kapsamında <a href="https://batuhanyalin.com/">Batuhan YALIN </a>tarafından yapılmıştır.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!--/ Section Contact-footer End /-->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
+@Html.Action("PartialScript","Default")
+</body>
+</html>

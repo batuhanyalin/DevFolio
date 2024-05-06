@@ -1,0 +1,23 @@
+﻿@model DevFolioBireysel.Models.TblProject
+@{
+    ViewBag.Title = "CreateProject";
+    Layout = "~/Views/AdminLayout/AdminLayout.cshtml";
+}
+
+<h2>Yeni Proje Girişi</h2>
+<br />
+<form method="post">
+    <label>Proje Adı</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" }) <br />
+    <label>Proje Görseli</label>
+    @Html.TextBoxFor(x => x.CoverImageUrl, new { @class = "form-control" }) <br />
+    <label>Proje Kategorisi</label>
+    @Html.TextBoxFor(x => x.ProjectCategory, new { @class = "form-control" })<br />
+    <label>Github Linki</label>
+    @Html.TextBoxFor(x => x.GithubLink, new { @class = "form-control" }) <br />
+
+
+    <button class="btn btn-primary">Projeyi Kaydet</button>
+</form>
+
+

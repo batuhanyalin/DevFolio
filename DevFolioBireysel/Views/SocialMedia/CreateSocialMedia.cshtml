@@ -1,0 +1,14 @@
+﻿@model DevFolioBireysel.Models.TblSocialMedia
+@{
+    ViewBag.Title = "CreateSocialMedia";
+    Layout = "~/Views/AdminLayout/AdminLayout.cshtml";
+}
+
+<h2>Yeni Sosyal Medya Ekle</h2>
+    <form method="post">
+        <label>Platform Adı</label>
+        @Html.TextBoxFor(x => x.PlatformName, new {@class="form-control"})
+        <br />
+        <button class="btn btn-info">Sosyal Medyayı Kaydet</button>
+    </form>
+

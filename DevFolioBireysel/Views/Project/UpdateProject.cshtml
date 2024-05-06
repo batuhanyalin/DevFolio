@@ -1,0 +1,23 @@
+﻿@model DevFolioBireysel.Models.TblProject
+@{
+    ViewBag.Title = "UpdateProject";
+    Layout = "~/Views/AdminLayout/AdminLayout.cshtml";
+}
+
+<h2>Proje Güncelleme</h2>
+
+<form method="post">
+    <label>Proje ID</label>
+    @Html.TextBoxFor(x => x.ProjectID, new { @class = "form-control" })
+    <br />
+    <label>Proje Başlığı</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" }) <br />
+    <label>Proje Görseli</label>
+    @Html.TextBoxFor(x => x.CoverImageUrl, new { @class = "form-control" }) <br />
+    <label>ProjectCategory</label>
+    @Html.TextBoxFor(x => x.ProjectCategory, new { @class = "form-control" }) <br />
+    <label>Github Link</label>
+    @Html.TextBoxFor(x => x.GithubLink, new { @class = "form-control" }) <br />
+    <button class="btn btn-primary">Projeyi Güncelle</button>
+</form>
+
